@@ -16,9 +16,9 @@ package
 		{			
 			var lineBreak:uint =  new Text("\n\n\n\n\n").height;
 			var lineSkip:String = "\n\n\n\n\n";
-			var gameOverTextMessage:Array = new Array(	"GAME OVER",
-														"PRESS <ENTER> TO PLAY AGAIN",
-														"PRESS <SPACE> TO SUBMIT SCORE"	);
+			var gameOverTextMessage:Array = new Array("GAME OVER",
+								"PRESS <ENTER> TO PLAY AGAIN",
+								"PRESS <SPACE> TO SUBMIT SCORE"	);
 			G.gameOverText = new TextDisplay(gameOverTextMessage, 0, 0, G.textColor, lineSkip, 16, "nokiafc22", 0, -1*lineBreak/2);
 			G.gameOverText.centerText();
 			G.gameOverText.graphic.visible = false;
@@ -37,13 +37,13 @@ package
 			/**
 			 * Add Text objects to screen
 			 */			
-			graphic = new Graphiclist(	G.gameOverText.graphic,
-										G.healthText.graphic,
-										G.scoreText.graphic,
-										G.arsenalText.graphic,
-										G.chainText.graphic,
-										G.creditsTextLamine.graphic,
-										G.creditsTextVicki.graphic	);
+			graphic = new Graphiclist(G.gameOverText.graphic,
+						G.healthText.graphic,
+						G.scoreText.graphic,
+						G.arsenalText.graphic,
+						G.chainText.graphic,
+						G.creditsTextLamine.graphic,
+						G.creditsTextVicki.graphic );
 			
 			layer = -100;
 		}
