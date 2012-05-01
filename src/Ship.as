@@ -109,22 +109,22 @@ package
 			}
 			// Spreader gun
 			else if(Input.pressed(Key.X) && arsenal.spreader == true && G.spreaderCooldown==false){
-					world.add(new Bullet(x + 2 * width, y + 12, "spreader")); // bullet going straight
+				world.add(new Bullet(x + 2 * width, y + 12, "spreader")); // bullet going straight
+				
+				var ySpeed:Number = 100 * FP.elapsed; // bullet vertical speed
 					
-					var ySpeed:Number = 100 * FP.elapsed; // bullet vertical speed
+				var bullet:Bullet = new Bullet(x + 2*width, y + 12, "spreader");
+				bullet.setAccelerationY(ySpeed);
+				world.add(bullet); // bullet going down/right
 					
-					var bullet:Bullet = new Bullet(x + 2*width, y + 12, "spreader");
-					bullet.setAccelerationY(ySpeed);
-					world.add(bullet); // bullet going down/right
+				bullet = new Bullet(x + 2*width, y + 12, "spreader");
+				bullet.setAccelerationY(-ySpeed);
+				world.add(bullet); // bullet going up/right
 					
-					bullet = new Bullet(x + 2*width, y + 12, "spreader");
-					bullet.setAccelerationY(-ySpeed);
-					world.add(bullet); // bullet going up/right
+				SoundManager.i.playSound("BulletShot");
 					
-					SoundManager.i.playSound("BulletShot");
-					
-					G.spreaderCooldown = true;
-					G.spreaderTicker = 0.3; // start cooldown
+				G.spreaderCooldown = true;
+				G.spreaderTicker = 0.3; // start cooldown
 			}
 			// Chain gun
 			else if (Input.check(Key.C) && arsenal.chain == true && G.chainCooldown == false) {
