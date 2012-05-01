@@ -47,9 +47,6 @@ package
 		public static var upgradeText:TextDisplay;
 		public static var healthText:TextDisplay;
 		public static var gameOverText:TextDisplay;
-		public static var gameOverText1:TextDisplay;
-		public static var gameOverText2:TextDisplay;
-		public static var gameOverText3:TextDisplay;
 		public static var arsenalText:TextDisplay;
 		public static var chainText:TextDisplay;
 		public static var chainEnergyText:TextDisplay;
