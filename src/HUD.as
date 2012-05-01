@@ -14,7 +14,7 @@ package
 	{		
 		public function HUD()
 		{			
-			var lineBreak:uint = new Text("\n\n\n\n\n").height;
+			var lineBreak:uint =  new Text("\n\n\n\n\n").height;
 			var lineSkip:String = "\n\n\n\n\n";
 			var gameOverTextMessage:Array = new Array(	"GAME OVER",
 														"PRESS <ENTER> TO PLAY AGAIN",
