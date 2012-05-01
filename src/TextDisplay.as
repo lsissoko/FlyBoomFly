@@ -44,14 +44,14 @@ package
 		 * Constructor
 		 */
 		public function TextDisplay(_textArray:Array,
-									_x:Number, 
-									_y:Number, 
-									_color:int, 
-									_lineBreak:String = "",
-									_size:int = 20, 
-									_font:String = null, 
-									_xOffset:int = 0, 
-									_yOffset:int = 0 )
+					_x:Number, 
+					_y:Number, 
+					_color:int, 
+					_lineBreak:String = "",
+					_size:int = 20, 
+					_font:String = null, 
+					_xOffset:int = 0, 
+					_yOffset:int = 0 )
 		{
 			allText = new Graphiclist;
 			lineBreakHeight = new Text(_lineBreak).height / 2;			
