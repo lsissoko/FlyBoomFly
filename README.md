@@ -1,7 +1,7 @@
 Fly Boom Fly
 ============
 
-[Fly Boom Fly](http://www.kongregate.com/games/sissokogames/fly-boom-fly) is a Flash game built with [Skeleton](https://github.com/Rolpege/Skeleton) and [FlashPunk](https://github.com/Draknek/FlashPunk).
+Flash game built with [Skeleton](https://github.com/Rolpege/Skeleton) and [FlashPunk](https://github.com/Draknek/FlashPunk).
 
 <img src="misc/cover.png">
 
